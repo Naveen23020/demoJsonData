@@ -1,0 +1,23 @@
+name: CI-CD Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build application
+        run: echo "Building application..."
+
+      - name: Run tests
+        run: echo "Running tests..."
+
+      - name: Deploy to PROD
+        run: echo "Deploying to PROD..."
