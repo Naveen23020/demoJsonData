@@ -20,4 +20,4 @@ jobs:
         run: echo "Running tests..."
 
       - name: Deploy to PROD
-        run: echo "Deploying to PROD..."
+        run: echo "Deploying to PROD................"
